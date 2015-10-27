@@ -1,0 +1,6 @@
+name: Inabate
+version: ${version}
+main: com.inabate.bukkit.BukkitCDN
+depend: [ProtocolLib]
+authors: [suedadam, Sponges]
+description: Inabate

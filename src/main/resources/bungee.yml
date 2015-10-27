@@ -1,0 +1,5 @@
+name: Inabate
+version: ${version}
+main: com.inabate.bungee.BungeeCDN
+authors: [suedadam, Sponges]
+description: Inabate
