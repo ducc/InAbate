@@ -40,11 +40,7 @@ public class PlayerListener implements Listener {
         try {
             ReflectionUtils.setFinalField(event.getConnection().getClass(), event.getConnection(), "virtualHost", new InetSocketAddress(vHost, event.getHandshake().getPort()));
         } catch (Exception exception1) {
-            try {
-                ReflectionUtils.setFinalField(event.getConnection().getClass(), event.getConnection(), "vHost", new InetSocketAddress(vHost, event.getHandshake().getPort()));
-            } catch (Exception exception) {
-                exception.printStackTrace();
-            }
+            exception1.printStackTrace();
         }
 
         try {
