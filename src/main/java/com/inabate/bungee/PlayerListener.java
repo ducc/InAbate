@@ -25,7 +25,7 @@ public class PlayerListener implements Listener {
         try {
             Object ch = ReflectionUtils.getPrivateField(event.getConnection().getClass(), event.getConnection(), Object.class, "ch");
             Method method = ch.getClass().getDeclaredMethod("getHandle", new Class[0]);
-            channel = (Channel)method.invoke(ch, new Object[0]);
+            channel = (Channel) method.invoke(ch, new Object[0]);
         } catch (Exception e) {
             e.printStackTrace();
             return;
