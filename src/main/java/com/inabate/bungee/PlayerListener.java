@@ -12,7 +12,13 @@ import java.net.InetSocketAddress;
 
 public class PlayerListener implements Listener {
 
-    @EventHandler(priority=-64)
+    private BungeeCDN cdn;
+
+    public PlayerListener(BungeeCDN cdn) {
+        this.cdn = cdn;
+    }
+
+    @EventHandler(priority=-32)
     public void onHandshake(PlayerHandshakeEvent event) {
         Channel channel;
 
@@ -26,6 +32,11 @@ public class PlayerListener implements Listener {
         }
 
         String raw = event.getHandshake().getHost();
+        cdn.getLogger().info("InAbate connection: " + raw);
+
+        // Erm adam asked me to do this?
+        if (!raw.contains("MineCDN")) event.getConnection().disconnect();
+
         String[] hostname = raw.split("//MineCDN//");
 
         if (hostname.length < 2) return;
