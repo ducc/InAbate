@@ -35,6 +35,7 @@ public class PlayerListener implements Listener {
         cdn.getLogger().info("InAbate connection: " + raw);
 
         // Erm adam asked me to do this?
+        // pnada was here
         if (!raw.contains("MineCDN")) event.getConnection().disconnect();
 
         String[] hostname = raw.split("//MineCDN//");
