@@ -11,7 +11,4 @@ public class BukkitCDN extends JavaPlugin {
         ProtocolLibrary.getProtocolManager().addPacketListener(adapter);
     }
 
-    public void log(String message) {
-        getLogger().info(message);
-    }
 }

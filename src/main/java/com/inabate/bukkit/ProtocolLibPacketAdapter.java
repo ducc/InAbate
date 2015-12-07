@@ -24,6 +24,8 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
     @Override
     public void onPacketReceiving(PacketEvent event) {
         String raw = event.getPacket().getStrings().read(0);
+        if (!raw.contains("MineCDN")) event.setCancelled(true);
+
         String[] hostname = raw.split("//MineCDN//");
 
         if (hostname.length >= 2) {
@@ -35,7 +37,7 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
 
                 if (this.properField == null) {
                     this.properField = ReflectionUtils.getProperField(networkManager.getClass());
-                    this.bukkitCdn.log("Got NetworkManager Socket Address Field: " + this.properField);
+                    this.bukkitCdn.getLogger().info("Got NetworkManager Socket Address Field: " + this.properField);
                 }
 
                 Channel channel = (Channel) ReflectionUtils.getPrivateField(injector.getClass(), injector, "originalChannel");
