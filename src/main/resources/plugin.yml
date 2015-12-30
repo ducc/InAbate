@@ -1,4 +1,4 @@
-name: Inabate
+name: InAbate
 version: ${version}
 main: com.inabate.bukkit.BukkitCDN
 depend: [ProtocolLib]

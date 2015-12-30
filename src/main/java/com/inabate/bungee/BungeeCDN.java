@@ -8,4 +8,5 @@ public class BungeeCDN extends Plugin {
     public void onEnable() {
         getProxy().getPluginManager().registerListener(this, new PlayerListener(this));
     }
+
 }
