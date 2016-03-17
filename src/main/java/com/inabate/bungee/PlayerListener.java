@@ -36,6 +36,7 @@ public class PlayerListener implements Listener {
 
         // Erm adam asked me to do this?
         // pnada was here
+        // alfie was here
         if (!raw.contains("MineCDN")) event.getConnection().disconnect();
 
         String[] hostname = raw.split("//MineCDN//");
