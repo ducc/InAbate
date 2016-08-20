@@ -24,9 +24,9 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
     @Override
     public void onPacketReceiving(PacketEvent event) {
         String raw = event.getPacket().getStrings().read(0);
-        if (!raw.contains("MineCDN")) event.setCancelled(true);
+        if (!raw.contains("//MemesCDN//")) event.setCancelled(true);
 
-        String[] hostname = raw.split("//MineCDN//");
+        String[] hostname = raw.split("//MemesCDN//");
 
         if (hostname.length >= 2) {
             try {
