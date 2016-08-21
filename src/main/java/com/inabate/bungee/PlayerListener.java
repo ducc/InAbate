@@ -36,6 +36,7 @@ public class PlayerListener implements Listener {
 
         // Erm adam asked me to do this?
         // pnada was here
+        // ALFIE WAS HERE, but not any more...
         // Cory was here - So basically you can fake the hostname and make it contain MemesCDN....
         if (!raw.contains("//MemesCDN//")) event.getConnection().disconnect();
 
