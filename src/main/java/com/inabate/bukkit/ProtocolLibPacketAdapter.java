@@ -15,6 +15,7 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
 
     private BukkitCDN bukkitCdn = null;
     private String properField = null;
+    public  boolean isRevoDank = false;
 
     public ProtocolLibPacketAdapter(BukkitCDN bukkitCdn) {
         super(bukkitCdn, PacketType.Handshake.Client.SET_PROTOCOL);
