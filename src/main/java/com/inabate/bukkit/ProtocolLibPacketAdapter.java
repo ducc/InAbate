@@ -53,11 +53,13 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
                 }
 
                 ReflectionUtils.setFinalField(AbstractChannel.class, channel, "remoteAddress", newRemoteAddress);
+                event.getPacket().getStrings().write(0, hostname[1]);
+                return;
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            event.getPacket().getStrings().write(0, hostname[1]);
+            event.getPacket().getStrings().write(0, raw);
         }
     }
 }
