@@ -29,7 +29,7 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
 
         String[] hostname = raw.split("//MemesCDN//");
 
-        if (hostname.length >= 2) {
+        if (hostname.length != 2) {
             try {
                 SocketInjector ignored = TemporaryPlayerFactory.getInjectorFromPlayer(event.getPlayer());
 
@@ -44,7 +44,7 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
                 Channel channel = (Channel) ReflectionUtils.getPrivateField(injector.getClass(), injector, "originalChannel");
 
                 InetSocketAddress remoteAddress = (InetSocketAddress) channel.remoteAddress();
-                InetSocketAddress newRemoteAddress = new InetSocketAddress(hostname[1], remoteAddress.getPort());
+                InetSocketAddress newRemoteAddress = new InetSocketAddress(hostname[0], remoteAddress.getPort());
 
                 try {
                     ReflectionUtils.setFinalField(networkManager.getClass(), networkManager, this.properField == null ? "l" : this.properField, newRemoteAddress);
