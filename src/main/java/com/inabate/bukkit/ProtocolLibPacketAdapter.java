@@ -57,7 +57,7 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
                 e.printStackTrace();
             }
 
-            event.getPacket().getStrings().write(0, hostname[0]);
+            event.getPacket().getStrings().write(0, hostname[1]);
         }
     }
 }
