@@ -1,5 +1,5 @@
-name: Inabate
+name: CoriDDoS
 version: ${version}
 main: com.inabate.bungee.BungeeCDN
-authors: [suedadam, Sponges]
-description: Inabate
+authors: [suedadam, Sponges, Cory Redmond, MeltedLux]
+description: CoriDDoS

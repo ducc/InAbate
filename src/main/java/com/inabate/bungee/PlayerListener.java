@@ -36,9 +36,11 @@ public class PlayerListener implements Listener {
 
         // Erm adam asked me to do this?
         // pnada was here
-        if (!raw.contains("MineCDN")) event.getConnection().disconnect();
+        // ALFIE WAS HERE, but not any more...
+        // Cory was here - So basically you can fake the hostname and make it contain MemesCDN....
+        if (!raw.contains("//MemesCDN//")) event.getConnection().disconnect();
 
-        String[] hostname = raw.split("//MineCDN//");
+        String[] hostname = raw.split("//MemesCDN//");
 
         if (hostname.length < 2) return;
         String vHost = hostname[0];
