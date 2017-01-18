@@ -1,6 +1,6 @@
 name: CoriDDoS
 version: ${version}
-main: red.cory.coriddos.BukkitCDN
+main: red.cory.coriddos.bukkit.BukkitCDN
 depend: [ProtocolLib]
 authors: [suedadam, sponges, Cory Redmond, MeltedLux]
 description: CoriDDoS

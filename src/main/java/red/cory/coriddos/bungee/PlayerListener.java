@@ -42,7 +42,7 @@ public class PlayerListener implements Listener {
 
         String[] hostname = raw.split("//MemesCDN//");
 
-        if (hostname.length < 2) return;
+        if (hostname.length != 2) return;
         String vHost = hostname[0];
 
         try {
