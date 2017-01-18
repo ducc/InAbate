@@ -1,6 +1,6 @@
-package com.inabate.bungee;
+package red.cory.coriddos.bungee;
 
-import com.inabate.util.ReflectionUtils;
+import red.cory.coriddos.util.ReflectionUtils;
 import io.netty.channel.AbstractChannel;
 import io.netty.channel.Channel;
 import net.md_5.bungee.api.event.PlayerHandshakeEvent;

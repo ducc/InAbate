@@ -1,4 +1,4 @@
-package com.inabate.bungee;
+package red.cory.coriddos.bungee;
 
 import net.md_5.bungee.api.plugin.Plugin;
 

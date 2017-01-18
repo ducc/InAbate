@@ -1,6 +1,6 @@
 name: CoriDDoS
 version: ${version}
-main: com.inabate.bukkit.BukkitCDN
+main: BukkitCDN
 depend: [ProtocolLib]
 authors: [suedadam, sponges, Cory Redmond, MeltedLux]
 description: CoriDDoS

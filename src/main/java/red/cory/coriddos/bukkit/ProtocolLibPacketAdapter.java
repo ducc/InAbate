@@ -1,11 +1,11 @@
-package com.inabate.bukkit;
+package red.cory.coriddos.bukkit;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.injector.server.SocketInjector;
 import com.comphenix.protocol.injector.server.TemporaryPlayerFactory;
-import com.inabate.util.ReflectionUtils;
+import red.cory.coriddos.util.ReflectionUtils;
 import io.netty.channel.AbstractChannel;
 import io.netty.channel.Channel;
 
