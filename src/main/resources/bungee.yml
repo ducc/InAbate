@@ -1,5 +1,5 @@
 name: CoriDDoS
 version: ${version}
-main: BungeeCDN
+main: red.cory.coriddos.BungeeCDN
 authors: [suedadam, Sponges, Cory Redmond, MeltedLux]
 description: CoriDDoS
