@@ -24,13 +24,14 @@ public class ProtocolLibPacketAdapter extends PacketAdapter {
 
     @Override
     public void onPacketReceiving(PacketEvent event) {
+
         String raw = event.getPacket().getStrings().read(0);
         if (!raw.contains("//MemesCDN//")) event.setCancelled(true);
-
         String[] hostname = raw.split("//MemesCDN//");
 
-        if (hostname.length != 2) {
+        if (hostname.length == 2) {
             try {
+
                 SocketInjector ignored = TemporaryPlayerFactory.getInjectorFromPlayer(event.getPlayer());
 
                 Object injector = ReflectionUtils.getPrivateField(ignored.getClass(), ignored, "injector");
