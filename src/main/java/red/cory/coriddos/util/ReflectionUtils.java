@@ -1,4 +1,4 @@
-package com.inabate.util;
+package red.cory.coriddos.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

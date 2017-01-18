@@ -1,4 +1,4 @@
-package com.inabate.bukkit;
+package red.cory.coriddos.bukkit;
 
 import com.comphenix.protocol.ProtocolLibrary;
 import org.bukkit.plugin.java.JavaPlugin;

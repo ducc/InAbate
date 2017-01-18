@@ -1,6 +1,6 @@
-package com.inabate.bungee;
+package red.cory.coriddos.bungee;
 
-import com.inabate.util.ReflectionUtils;
+import red.cory.coriddos.util.ReflectionUtils;
 import io.netty.channel.AbstractChannel;
 import io.netty.channel.Channel;
 import net.md_5.bungee.api.event.PlayerHandshakeEvent;
@@ -36,11 +36,13 @@ public class PlayerListener implements Listener {
 
         // Erm adam asked me to do this?
         // pnada was here
-        if (!raw.contains("MineCDN")) event.getConnection().disconnect();
+        // ALFIE WAS HERE, but not any more...
+        // Cory was here - So basically you can fake the hostname and make it contain MemesCDN....
+        if (!raw.contains("//MemesCDN//")) event.getConnection().disconnect();
 
-        String[] hostname = raw.split("//MineCDN//");
+        String[] hostname = raw.split("//MemesCDN//");
 
-        if (hostname.length < 2) return;
+        if (hostname.length != 2) return;
         String vHost = hostname[0];
 
         try {

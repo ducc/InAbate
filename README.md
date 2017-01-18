@@ -1,9 +1,9 @@
-# InAbate
-Revamped plugin for InAbate DDoS protection.
+# CoriDDoS
+Revamped plugin for InAbate DDoS protection, memeified for CoriDDoS
 
-Pull requests welcome.
+Pull requests not welcome.
 
 ### What does this do?
-Gets the player's original IP from the header, ensuring that each player has their original IP instead of the InAbate IP.
+Read the code... It's not hard.
 
 

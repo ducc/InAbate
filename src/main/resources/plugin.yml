@@ -1,6 +1,6 @@
-name: InAbate
+name: CoriDDoS
 version: ${version}
-main: com.inabate.bukkit.BukkitCDN
+main: red.cory.coriddos.bukkit.BukkitCDN
 depend: [ProtocolLib]
-authors: [suedadam, Sponges]
-description: Inabate
+authors: [suedadam, sponges, Cory Redmond, MeltedLux]
+description: CoriDDoS
