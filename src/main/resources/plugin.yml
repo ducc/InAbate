@@ -1,6 +1,6 @@
-name: InAbate
+name: PsychzGGA
 version: ${version}
-main: com.inabate.bukkit.BukkitCDN
+main: com.PsychzGGA.bukkit.BukkitCDN
 depend: [ProtocolLib]
-authors: [suedadam, Sponges]
-description: Inabate
+authors: [suedadam, duccMAN]
+description: PsychzGGA
