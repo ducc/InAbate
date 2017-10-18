@@ -1,5 +1,5 @@
-name: Inabate
+name: PsychzGGA
 version: ${version}
-main: com.inabate.bungee.BungeeCDN
-authors: [suedadam, Sponges]
-description: Inabate
+main: com.PsychzGGA.bungee.BungeeCDN
+authors: [suedadam, duccMan]
+description: PsychzGGA
